@@ -5,10 +5,6 @@
 export EDITOR='vim'
 export VISUAL='vim'
 
-if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
-  exec startx
-fi
-
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
